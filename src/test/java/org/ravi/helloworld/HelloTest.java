@@ -28,18 +28,15 @@ public class HelloTest {
 	}
 
 	@Test
-	public void f() {
+	public void f1() throws Exception {
 
-		/*text = driver.findElement(By.xpath("html/body/h2"));
+		//text = driver.findElement(By.xpath("html/body/h2"));
 		Assert.assertEquals(driver.getTitle(), "HelloWorld");
-		System.out.println("Test Passed");*/
-		WebElement bodyText = driver.findElement(By.tagName("body"));
-
-		String AllTextOnPage = bodyText.getText();
-
-
+		Thread.sleep(10000);
+		System.out.println("Test Passed");
+	
 	}
-
+	
 	@AfterTest
 	public void afterTest() {
 		driver.close();
